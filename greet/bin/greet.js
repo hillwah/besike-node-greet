@@ -1,8 +1,5 @@
 #! /usr/bin/env node
 
-var greet = require('../');
-var argv = require('minimist')(process.argv.slice(2));
+var command = require("../lib/command");
 
-// console.dir(argv);
-
-console.log(greet(argv._[0], argv.drunk));
+command();
